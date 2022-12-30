@@ -1,6 +1,8 @@
-errors.txt
 Calculator.vcxproj
 Calculator.vcxproj.filters
 Calculator.vcxproj.user
 Calculator.sln
+Calculator/x64
+/x64
 /.vs
+
