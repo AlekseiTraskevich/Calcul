@@ -1,11 +1,15 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 class Calculator {
 public:
-    double Calculate(double x, char oper, double y);
-    double Calculate(double x, char oper);
+    double Calculate(string X, string oper, string Y);
+    double Calculate(string X, string oper);
+    //double Calculate(string oper, string X, int a);
+    //double Calculate(string fun, string X, char a);
 };
 
 double Sum(double x, double y);

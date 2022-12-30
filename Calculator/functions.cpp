@@ -1,4 +1,5 @@
-#include <iostream>
+#include "Calculator.h";
+#define pi 3.14159265358979
 using namespace std;
 
 double Sum(double x, double y) {
