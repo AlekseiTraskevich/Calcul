@@ -42,7 +42,21 @@ double Degree(double x, double y) {
 }
 
 
-
+void automatic_exam(int ix) {
+	while (true) {
+		if (ix > 6) {
+			cout << ix << " на экзамене!!!!!\n";
+			while (true) {
+				cout << "Спасибо!\n";
+			}
+		}
+		else {
+			cout << "Введите другое число ";
+			cin >> ix;
+			continue;
+		}
+	}
+}
 
 
 double FactorialN(double x) {

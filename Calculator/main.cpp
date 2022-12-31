@@ -3,8 +3,9 @@ using namespace std;
 
 int main() {
 	setlocale(0, "");
-	cout << "\tCalculator Console Application\n\n";
-	cout << "Поддерживаемые операции: + - * / ^ !\n";
+	cout << "\tCalculator Console Application\n";
+	cout << "  Merry Christmas and Happy New Year!\n\n";
+	cout << "Поддерживаемые операции: + - * / ^ ! automatic_exam\n";
 	cout << "Введите каждое число/операцию через пробел\n";
 	cout << "Например: a + b = ,  a ! = \n\n";
 
@@ -37,7 +38,7 @@ int main() {
 			all.push_back(str);
 
 			//это число?
-			if (str[0] >= '1' && str[0] <= '9' || str[0] == '-') {
+			if (str[0] >= '1' && str[0] <= '9' || str[0] == '-' && str.size()>1) {
 				int count = 1;
 				for (int i = 1; i < str.size(); ++i) {
 					if (str[i] <= '9' && str[i] >= '0') {
@@ -61,7 +62,7 @@ int main() {
 			}
 
 			//это функция?
-			else if (str == "log") {
+			else if (str == "log" || str == "automatic_exam") {
 				funcs.push_back(str);
 			}
 
@@ -119,15 +120,15 @@ int main() {
 				}
 			}
 		}
-		else if (all[0] == opers[0]) {	//если первая строка операция
-			if (all[1] == numbs[0] && all.size() == 2) {	//если вторая строка число и она последняя
-				//вызвать Калькулятор опер число
-				result = c.Calculate(numbs[0], opers[0]);
-			}
-			else {
-				cout << "Error!\n";
-			}
-		}
+		//else if (all[0] == opers[0]) {	//если первая строка операция
+		//	if (all[1] == numbs[0] && all.size() == 2) {	//если вторая строка число и она последняя
+		//		//вызвать Калькулятор опер число
+		//		result = c.Calculate(numbs[0], opers[0]);
+		//	}
+		//	else {
+		//		cout << "Error!\n";
+		//	}
+		//}
 		else if (all[0] == funcs[0]) {	//если первая строка функция
 			if (all[1] == numbs[0] && all.size() == 2) {	//если вторая строка число и она последняя
 				//вызвать Калькулятор функция число

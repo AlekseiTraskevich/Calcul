@@ -22,6 +22,11 @@ double Calculator::Calculate(string X, string oper) {
 		cout << "Пока не работает";
 		return 0;
 	}
+	else if (oper == "automatic_exam") {
+		int ix = (int)x;
+		automatic_exam(ix);
+		return ix;
+	}
 
 	else {
 		cout << "\nОшибка ввода!\n";

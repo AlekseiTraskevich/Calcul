@@ -19,3 +19,4 @@ double Quotient(double x, double y);
 double FactorialN(double x);
 double FactorialF(double x);
 double Degree(double x, double y);
+void automatic_exam(int x);
